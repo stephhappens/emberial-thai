@@ -1,0 +1,10 @@
+.app {
+  &__top {
+    padding: 1rem;
+    background: $c-primary;
+
+    &__content {
+      padding: 1rem;
+    }
+  }
+}

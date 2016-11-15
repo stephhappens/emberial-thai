@@ -1,0 +1,84 @@
+.menu_title {
+  border-bottom: 0.1rem solid $c-primary;
+}
+
+.menu-item {
+  display: flex;
+  background: $c-white;
+  width: 100%;
+
+  & + & {
+    border-top: 0.1rem solid $c-primary;
+  }
+
+  &__left {
+    flex-grow: 1;
+    padding: 0.5rem;
+  }
+
+  &__btn {
+
+  }
+}
+
+.food__name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.food__information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food__description {
+  font-size: 1rem;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.food__price {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.button__order {
+  background: $c-accent;
+  padding: .2rem .1rem;
+  color: $c-white;
+  font-weight: lighter;
+  border: none;
+}
+
+.cart {
+  width: 35%;
+
+  &__action {
+    background: $c-white;
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+
+  &__total {
+    padding: 1rem 0;
+    border-top: 0.1rem solid $c-primary;
+    border-bottom: 0.1rem solid $c-primary;
+  }
+}
+
+.button-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.cart__submit {
+  display: flex;
+  justify-content: space-around;
+  background: $c-accent;
+  padding: .5rem .7rem;
+  color: $c-white;
+  font-weight: lighter;
+  border: none;
+  width: 75%;
+  margin: 1rem;
+}
