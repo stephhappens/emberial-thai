@@ -3,24 +3,20 @@
     <div class="container">
       <nav class="top-nav">
         <div class="top-nav__group">
-          <h1 class="top-nav__item"><a href="/">Emberial Thai</a></h1>
+          <h1 class="top-nav__item"> {{#link-to "index"}} Emberial Thai {{/link-to}}</h1>
         </div>
-        <ul class="top-nav__group">
-          <li class="top-nav__item"> <a href="/">Order </a> </li>
-          <li class="top-nav__item"> <a href="/"> Admin </a> </li>
-          <li class="top-nav__item"> <a href="/"> Logout </a> </li>
 
+        <ul class="top-nav__group">
+          <li class="top-nav__item"> {{#link-to "index"}} Order {{/link-to}} </li>
+          <li class="top-nav__item"> {{#link-to "admin"}}Admin {{/link-to}} </li>
+          <li class="top-nav__item"> {{#link-to "index"}} Logout {{/link-to}} </li>
         </ul>
       </nav>
 
     </div>
   </div>
+    <div class="app__section">
+      {{ outlet }}
 
-  <div class="app__content">
-          <div class="delivery">
-            <p class="delivery__message">Get food delivered FAST!</p>
-          </div>
-
-    {{ outlet }}
+    </div>
   </div>
-</div>

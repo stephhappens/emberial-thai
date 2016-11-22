@@ -2,6 +2,10 @@
 
 module.exports = function(environment) {
   var ENV = {
+    DS: {
+      host: 'https://boiling-wildwood-37819.herokuapp.com',
+    },
+
     modulePrefix: 'emberial-thai',
     environment: environment,
     rootURL: '/',

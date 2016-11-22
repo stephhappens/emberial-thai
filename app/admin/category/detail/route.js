@@ -2,6 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('menu-category');
+    return this.store.findAll('menu-category')
   },
 });

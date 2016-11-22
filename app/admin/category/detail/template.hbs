@@ -1,0 +1,29 @@
+<div class="container">
+  <h1 class="menu_title">{{ model.name }}</h1>
+  <div class="card">
+    <div class="add__new">
+      {{#link-to "admin.category.new" class="add__new-btn" }} Add New {{/link-to}}
+    </div>
+
+    <div class="menu-item">
+      <table class="card-table">
+        <thead>
+          <th>Name</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </thead>
+        <tbody>
+          {{#each model.menuItems as |food|}}
+            <tr>
+              <td>{{ food.name }} </td>
+              <td>{{ food.price }} </td>
+              <td>{{ food.description }} </td>
+              <td></td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
