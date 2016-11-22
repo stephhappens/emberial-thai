@@ -13,11 +13,11 @@
           <th class="table__name">Name</th>
           <th></th>
         </thead>
-        {{#each model as |value|}}
+        {{#each model as |category|}}
 
           <tr>
-            <td> {{ value.name }} </td>
-            <td> {{#link-to "admin.category.detail"}} Detail {{/link-to}}</td>
+            <td> {{ category.name }} </td>
+            <td> {{#link-to "admin.category.detail" category.id}} Detail {{/link-to}}</td>
           </tr>
 
         {{/each}}
