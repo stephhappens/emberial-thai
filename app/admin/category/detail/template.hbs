@@ -2,7 +2,9 @@
   <h1 class="menu_title">{{ model.name }}</h1>
   <div class="card">
     <div class="add__new">
-      {{#link-to "admin.category.new" class="add__new-btn" }} Add New {{/link-to}}
+      {{#link-to "admin.category.new-item" model.id class="add__new-btn" }}
+        Add New Item to {{model.name}}
+      {{/link-to}}
     </div>
 
     <div class="menu-item">
