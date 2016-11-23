@@ -1,16 +1,14 @@
 <div class="container">
-  <form class="add__new-form">
-
+  {{#simple-form onsubmit=(action "saveForm") class="add__new-form" as | formValues |}}
     <div class="form-header"> New Category </div>
     <div class="form__container">
       <div class="input__field"> Name
-      <input class="input__field-name" name="name">
+        {{input placeholder="Name" value=formValues.name}}
       </div>
       </div>
       <div class="btn__flex">
         {{#link-to "admin" class="btn__flex-btn" }} Back {{/link-to}}
-        <button class="btn__flex-btn">Submit</button>
+        <button type="submit" name="submit" class="btn__flex-btn">Submit</button>
       </div>
-
-  </form>
+  {{/simple-form}}
 </div>

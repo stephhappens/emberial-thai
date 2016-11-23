@@ -1,0 +1,32 @@
+<div class="container">
+  <form class="add__new-form">
+
+    <div class="form-header"> New Category</div>
+    <div class="form__container">
+
+      <div class="input__field"> Name
+        <input class="input__field-name" name="name">
+      </div>
+
+      <div class="input-field">
+        <label for="" class="input-field__title">Price</label>
+        <div class="input-addon">
+          <span class="input-addon__item">$</span>
+          <input type="text" class="input-addon__control">
+        </div>
+      </div>
+
+      <div class="input__field"> Description
+        <input class="input__field-name" name="name">
+      </div>
+
+    </div>
+
+    <div class="btn__flex">
+      {{#link-to "admin.category" class="btn__flex-btn" }} Back {{/link-to}}
+      <button class="btn__flex-btn"> Delete </button>
+      <button class="btn__flex-btn">Submit</button>
+    </div>
+
+  </form>
+</div>
