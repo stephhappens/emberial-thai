@@ -21,7 +21,7 @@
               <td>{{ food.name }} </td>
               <td>{{ food.price }} </td>
               <td>{{ food.description }} </td>
-              <td></td>
+              <td>{{#link-to 'admin.edit-item' food.id}} Edit Item {{/link-to}}</td>
             </tr>
           {{/each}}
         </tbody>
