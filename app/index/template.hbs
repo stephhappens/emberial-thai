@@ -1,0 +1,52 @@
+<div class="full-page">
+<div class="app__content">
+  <div class="delivery">
+  <p class="delivery__message">Get food delivered FAST!</p>
+  </div>
+
+<div class="container">
+  <div class="grid grid--centered">
+
+    <div class="grid__item">
+      <h2 class="menu_title">Menu</h2>
+      {{#each model as |value| }}
+        <div class="card">
+          <div class="card__title">
+            {{ value.name }}
+          </div>
+
+
+          {{#each value.menuItems as |food|}}
+            <div class="menu-item">
+              <div class="menu-item__left">
+                <div class="food__information">
+                  <p class="food__name"> {{ food.name }}</p>
+                  <p class="food__price">$ {{ food.price }}</p>
+                </div>
+                <p class="food__description"> {{ food.description }}</p>
+              </div>
+              <button class="menu-item__btn button__order">Order</button>
+            </div>
+          {{/each}}
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="grid__item">
+        <h2 class="menu_title">Your Order</h2>
+        <div class="card">
+          <div class="card__title">Cart</div>
+          <div class="cart__action">
+            <p class="cart__food-name">{{ food.name }} Add Something </p>
+            <p> No Items have been added to the cart!</p>
+            <p class="cart__total"> Total $ {{food.price}} </p>
+            <div class="button-flex">
+            <button class="cart__submit">Submit Order</button>
+          </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>

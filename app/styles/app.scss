@@ -1,0 +1,13 @@
+$c-primary: #26575F;
+$c-secondary: #E8E8E8;
+$c-accent: #5CAB9D;
+$c-white: #fff;
+$c-alert: #622651;
+
+@import "nav-bar";
+@import "reset";
+@import 'menu';
+@import 'layout';
+@import 'section';
+@import 'delivery';
+@import 'admin';
